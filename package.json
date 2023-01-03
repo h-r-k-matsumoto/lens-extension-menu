@@ -1,0 +1,42 @@
+{
+  "name": "lens-extension-menu",
+  "version": "1.0.0",
+  "description": "Lens extension menu",
+  "renderer": "dist/renderer.js",
+  "lens": {
+    "metadata": {},
+    "styles": []
+  },
+  "scripts": {
+    "build": "npx webpack && npm pack",
+    "dev": "npx webpack -- --watch",
+    "test": "npx jest --passWithNoTests --env=jsdom src $@"
+  },
+  "engines": {
+    "lens": "^6.0.0"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@k8slens/extensions": "^6.0.0",
+    "ts-loader": "^9.0.0",
+    "typescript": "^4.9.0",
+    "@types/react": "^16.9.35",
+    "@types/node": "^16.0.0",
+    "webpack": "^5.7.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/h-r-k-matsumoto/lens-extension-menu",
+  "bugs": {
+    "url": "https://github.com/h-r-k-matsumoto/lens-extension-menu/issues"
+  },
+  "keywords": [
+    "extension",
+    "k8slens",
+    "lens",
+    "menu"
+  ]
+}
