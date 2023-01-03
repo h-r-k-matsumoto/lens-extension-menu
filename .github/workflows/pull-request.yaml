@@ -5,8 +5,8 @@ on:
     branches:
       - main
 jobs:
-  release:
-    name: CI
+  pull-request:
+    name: NPM RUN BUILD
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
