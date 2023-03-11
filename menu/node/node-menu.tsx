@@ -22,11 +22,10 @@ const {
   App,
 } = Common;
 
+type KubeObjectMenuProps = Renderer.Component.KubeObjectMenuProps<Node>;
+type Pod = Renderer.K8sApi.Node;
 
-export interface NodeMenuProps extends Renderer.Component.KubeObjectMenuProps<Node> {
-}
-
-export function NodeMenu(props: NodeMenuProps) {
+export function NodeMenu(props: KubeObjectMenuProps) {
   const { object: node, toolbar } = props;
 
   if (!node) {

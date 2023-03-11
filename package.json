@@ -1,42 +1,57 @@
 {
-  "name": "lens-extension-menu",
-  "version": "1.0.0",
-  "description": "Lens extension menu",
-  "renderer": "dist/renderer.js",
-  "lens": {
-    "metadata": {},
-    "styles": []
-  },
-  "scripts": {
-    "build": "npx webpack && npm pack",
-    "dev": "npx webpack -- --watch",
-    "test": "npx jest --passWithNoTests --env=jsdom src $@"
-  },
-  "engines": {
-    "lens": "^6.0.0"
-  },
-  "files": [
-    "dist/**/*"
-  ],
-  "dependencies": {},
-  "devDependencies": {
-    "@k8slens/extensions": "^6.0.0",
-    "ts-loader": "^9.0.0",
-    "typescript": "^4.9.0",
-    "@types/react": "^16.9.35",
-    "@types/node": "^16.0.0",
-    "webpack": "^5.7.0",
-    "webpack-cli": "^5.0.0"
-  },
-  "license": "MIT",
-  "homepage": "https://github.com/h-r-k-matsumoto/lens-extension-menu",
-  "bugs": {
-    "url": "https://github.com/h-r-k-matsumoto/lens-extension-menu/issues"
-  },
-  "keywords": [
-    "extension",
-    "k8slens",
-    "lens",
-    "menu"
-  ]
+	"name": "lens-extension-menu",
+	"version": "1.1.0",
+	"description": "Lens extension menu",
+	"main": "dist/main.js",
+	"renderer": "dist/renderer.js",
+	"lens": {
+		"metadata": {},
+		"styles": []
+	},
+	"scripts": {
+		"build": "npx webpack && npm pack",
+		"dev": "npx webpack -- --watch",
+		"test": "npx jest --passWithNoTests --env=jsdom src $@"
+	},
+	"engines": {
+		"node": ">=16 <17",
+		"lens": "^6.4.0"
+	},
+	"files": [
+		"dist/**/*"
+	],
+	"dependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
+	"devDependencies": {
+		"@k8slens/extensions": "^6.4.6",
+		"ts-loader": "^9.4.2",
+		"typescript": "^4.9.5",
+		"@types/node": "^16.18.2",
+		"@types/react": "^17.0.45",
+		"@types/jest": "^28.1.6",
+		"webpack": "^5.75.0",
+		"webpack-cli": "^4.9.2",
+		"eslint": "^8.28.0",
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"jest": "^28.1.3",
+		"@babel/preset-env": "^7.17.10",
+		"@babel/preset-react": "^7.16.7",
+		"@babel/preset-typescript": "^7.16.7",
+		"@testing-library/jest-dom": "^5.16.5",
+		"@testing-library/react": "^12.1.5"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/h-r-k-matsumoto/lens-extension-menu",
+	"bugs": {
+		"url": "https://github.com/h-r-k-matsumoto/lens-extension-menu/issues"
+	},
+	"keywords": [
+		"lens",
+		"extension",
+		"k8slens",
+		"kubernetes"
+	]
 }
