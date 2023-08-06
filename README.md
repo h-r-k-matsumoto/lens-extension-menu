@@ -12,4 +12,4 @@ https://api-docs.k8slens.dev/
 
 2. Specify the download URL below to the extension package.
 
-        https://github.com/h-r-k-matsumoto/lens-extension-menu/releases/download/v1.1.0/lens-extension-menu-1.1.0.tgz
+        https://github.com/h-r-k-matsumoto/lens-extension-menu/releases/download/v1.2.0/lens-extension-menu-1.2.0.tgz
