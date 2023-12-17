@@ -1,0 +1,24 @@
+name: "PR Analytics"
+on:
+  workflow_dispatch:
+
+jobs:
+  create-report:
+    name: "Create report"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Run script for analytics"
+        uses: h-r-k-matsumoto/pull-request-analytics-action@v2
+        with:
+          GITHUB_TOKEN: ${{ secrets.PAT }}
+          ISSUE_TITLE: "report"
+          GITHUB_REPO_FOR_ISSUE: "lens-extension-menu"
+          GITHUB_OWNER_FOR_ISSUE: "h-r-k-matsumoto"
+          GITHUB_OWNERS_REPOS: "h-r-k-matsumoto/lens-extension-menu"
+          CORE_HOURS_START: "9:00"
+          CORE_HOURS_END: "17:30"
+          TIMEZONE: "Asia/Tokyo"
+          AGGREGATE_VALUE_METHODS: "percentile"
+          PERCENTILE: "75"
+          REPORT_DATE_START: "01/01/2023"
+          REPORT_DATE_END: "31/12/2023"
